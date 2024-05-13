@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Recipes</title>
+  <style>
+    /* CSS for table styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    /* Random CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .dish-photo {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .confirm-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fish Recipes</h1>
+  <p>Choose the spices you want to add to your fish:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Description</th>
+        <th>Photo</th>
+        <th>Add Spices</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Our Secret Spices</td>
+        <td>Discover the unique blend of spices that make our fish recipes extraordinary.</td>
+        <td><img src="images/secret2.jpg" alt="Our Secret Spices" class="dish-photo"></td>
+        <td><input type="checkbox" name="spices" value="secret"></td>
+      </tr>
+      <tr>
+        <td>Garlic Butter</td>
+        <td>Infuse your fish with the rich flavor of garlic and butter for a savory delight.</td>
+        <td><img src="images/garlic.jpg" alt="Garlic Butter" class="dish-photo"></td>
+        <td><input type="checkbox" name="spices" value="garlic"></td>
+      </tr>
+      <tr>
+        <td>Citrus Marinade</td>
+        <td>Enhance the freshness of your fish with a zesty citrus marinade.</td>
+        <td><img src="images/herb.jpg" alt="Citrus Marinade" class="dish-photo"></td>
+        <td><input type="checkbox" name="spices" value="citrus"></td>
+      </tr>
+      <tr>
+        <td>Herb Crust</td>
+        <td>Coat your fish with a crunchy herb crust for a burst of flavor and texture.</td>
+        <td><img src="images/citurs.jpg" alt="Herb Crust" class="dish-photo"></td>
+        <td><input type="checkbox" name="spices" value="herb"></td>
+      </tr>
+      <!-- Add more options here -->
+    </tbody>
+  </table>
+
+  <button class="confirm-btn" onclick="confirmOrder()">Confirm Order</button>
+
+  <script>
+    function confirmOrder() {
+      alert("Your order is being prepared. We will call you to confirm shortly.");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
